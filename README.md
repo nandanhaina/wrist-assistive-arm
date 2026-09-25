@@ -34,7 +34,7 @@ Each of the 5 flex sensors is set up in a voltage divider configuration connecte
   * Index Finger: `18 kΩ`
 * **Signal Pins:** Connected to ESP32 GPIO pins `34, 35, 36, 39, 32`.
 
-*(Tip: Add a photo of your flex sensor circuit diagram here!)*
+
 
 ### 2. Servo Motor Receiver Circuit
 Because 5 servo motors draw more current than the ESP32 can provide, an external 5V power supply is required.
@@ -42,7 +42,7 @@ Because 5 servo motors draw more current than the ESP32 can provide, an external
 * **Ground (Brown):** Connect to External Power GND **AND** ESP32 GND (Common Ground).
 * **Signal (Orange):** Connect to ESP32 GPIO Pins `13, 12, 14, 27, 26`.
 
-*(Tip: Add a photo of your servo circuit diagram here!)*
+
 
 ### 3. EMG Sensor Circuit
 The RC-A056 EMG sensor requires a dual power supply (±9V) and outputs an analog signal.
