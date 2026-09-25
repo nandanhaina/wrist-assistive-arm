@@ -93,6 +93,7 @@ For the ESP-NOW wireless communication to work, the transmitters must know the M
 ### 3. Calibration
 * **Flex Sensor Mode:** Upon booting the transmitter, the serial monitor will prompt you to hold your fingers completely straight for 3 seconds, followed by completely bent for 3 seconds. The ESP32 uses this to automatically calculate custom bending thresholds for your hand.
 * **EMG Mode:** Keep your arm completely relaxed for 5 seconds when booting. The system will calibrate the resting muscle baseline to differentiate intentional spikes (contractions) from noise.
+  
 
 ---
 *This project was developed by Atulya Jauhari, Devesh Bharati, Nandan Soni, Soham Rajesh Wani, and Vivek Kumar Singh at Gati Shakti Vishwavidyalaya.*
