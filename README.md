@@ -54,7 +54,15 @@ The RC-A056 EMG sensor requires a dual power supply (±9V) and outputs an analog
   * Active (Red): Muscle belly
   * Secondary (Green): 3-4 cm along the same muscle line
   * Reference (Yellow): Bony region (e.g., wrist or elbow)
-
+```mermaid
+flowchart LR
+    FLEX["5x flex sensors<br/>voltage divider"] --> TXA["Transmitter ESP32<br/>ADC read + angle mapping"]
+    EMG["EMG module<br/>surface electrodes"] --> TXB["Transmitter ESP32<br/>ADC read + threshold"]
+    TXA -->|"ESP-NOW"| RX["Receiver ESP32<br/>decode + servo control"]
+    TXB -->|"ESP-NOW"| RX
+    RX --> S["5x servo PWM"]
+    S --> HAND["Tendon-driven hand"]
+```
 ---
 
 ## 📂 Repository Structure
